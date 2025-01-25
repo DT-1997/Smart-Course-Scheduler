@@ -1,0 +1,803 @@
+2025-01-23 16:54:26,079 - melody_haven - INFO - Logging is successfully configured!
+2025-01-23 16:54:58,833 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:08:59,930 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:23:36,377 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:26:14,656 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '班级编号'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 32, in upload_excel
+    class_number=row['班级编号'],
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '班级编号'
+2025-01-25 11:27:50,355 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:27:54,575 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '性别分布'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 45, in upload_excel
+    gender_distribution=row['性别分布'],
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '性别分布'
+2025-01-25 11:28:26,662 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:28:35,255 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '专业名称'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 50, in upload_excel
+    major_name=row['专业名称'],
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '专业名称'
+2025-01-25 11:28:55,990 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:28:58,884 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '固定教室编号'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 53, in upload_excel
+    fixed_classroom_number=row['固定教室编号'],
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '固定教室编号'
+2025-01-25 11:31:28,126 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:31:31,018 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1815, in _execute_context
+    context = constructor(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 1508, in _init_compiled
+    d_param = {
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 1510, in <dictcomp>
+    flattened_processors[key](compiled_params[key])
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1987, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1959, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+TypeError: Not a boolean value: '未毕业'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 70, in upload_excel
+    db.session.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1821, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1815, in _execute_context
+    context = constructor(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 1508, in _init_compiled
+    d_param = {
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 1510, in <dictcomp>
+    flattened_processors[key](compiled_params[key])
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1987, in process
+    value = _strict_as_bool(value)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 1959, in _strict_as_bool
+    raise TypeError("Not a boolean value: %r" % (value,))
+sqlalchemy.exc.StatementError: (builtins.TypeError) Not a boolean value: '未毕业'
+[SQL: INSERT INTO class (class_number, class_name, class_short_name, duration, education_level, class_type, counselor, head_teacher, monitor, class_assistant, expected_graduation_year, is_graduated, class_size, gender_distribution, max_class_size, enrollment_year, department, major_id, major_name, major_direction, campus, fixed_classroom_number, is_fixed_classroom, remarks, head_teacher_phone, head_teacher_id, graduation_year_semester, is_expanded, academic_advisor) VALUES (%(class_number)s, %(class_name)s, %(class_short_name)s, %(duration)s, %(education_level)s, %(class_type)s, %(counselor)s, %(head_teacher)s, %(monitor)s, %(class_assistant)s, %(expected_graduation_year)s, %(is_graduated)s, %(class_size)s, %(gender_distribution)s, %(max_class_size)s, %(enrollment_year)s, %(department)s, %(major_id)s, %(major_name)s, %(major_direction)s, %(campus)s, %(fixed_classroom_number)s, %(is_fixed_classroom)s, %(remarks)s, %(head_teacher_phone)s, %(head_teacher_id)s, %(graduation_year_semester)s, %(is_expanded)s, %(academic_advisor)s)]
+[parameters: [{'class_number': '24znhjjs2', 'enrollment_year': 2024, 'duration': '3年', 'is_expanded': nan, 'head_teacher': nan, 'class_name': '24智能焊接技术2班', 'campus' ... (393 characters truncated) ... 'class_assistant': nan, 'gender_distribution': nan, 'head_teacher_phone': nan, 'head_teacher_id': nan, 'major_id': '460110', 'department': '机械电气工程学院'}]]
+2025-01-25 11:35:09,518 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:35:16,648 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in _escape_args
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in <dictcomp>
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 530, in literal
+    return self.escape(obj, self.encoders)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 523, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 25, in escape_item
+    val = encoder(val, mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 56, in escape_float
+    raise ProgrammingError("%s can not be used with MySQL" % s)
+pymysql.err.ProgrammingError: nan can not be used with MySQL
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 83, in upload_excel
+    db.session.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in _escape_args
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in <dictcomp>
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 530, in literal
+    return self.escape(obj, self.encoders)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 523, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 25, in escape_item
+    val = encoder(val, mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 56, in escape_float
+    raise ProgrammingError("%s can not be used with MySQL" % s)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) nan can not be used with MySQL
+[SQL: INSERT INTO class (class_number, class_name, class_short_name, duration, education_level, class_type, counselor, head_teacher, monitor, class_assistant, expected_graduation_year, is_graduated, class_size, gender_distribution, max_class_size, enrollment_year, department, major_id, major_name, major_direction, campus, fixed_classroom_number, is_fixed_classroom, remarks, head_teacher_phone, head_teacher_id, graduation_year_semester, is_expanded, academic_advisor) VALUES (%(class_number)s, %(class_name)s, %(class_short_name)s, %(duration)s, %(education_level)s, %(class_type)s, %(counselor)s, %(head_teacher)s, %(monitor)s, %(class_assistant)s, %(expected_graduation_year)s, %(is_graduated)s, %(class_size)s, %(gender_distribution)s, %(max_class_size)s, %(enrollment_year)s, %(department)s, %(major_id)s, %(major_name)s, %(major_direction)s, %(campus)s, %(fixed_classroom_number)s, %(is_fixed_classroom)s, %(remarks)s, %(head_teacher_phone)s, %(head_teacher_id)s, %(graduation_year_semester)s, %(is_expanded)s, %(academic_advisor)s)]
+[parameters: {'class_number': '24znhjjs2', 'class_name': '24智能焊接技术2班', 'class_short_name': nan, 'duration': '3年', 'education_level': '专科', 'class_type': '普通班级', 'counselor': nan, 'head_teacher': nan, 'monitor': nan, 'class_assistant': nan, 'expected_graduation_year': nan, 'is_graduated': 0, 'class_size': 36, 'gender_distribution': nan, 'max_class_size': 60, 'enrollment_year': 2024, 'department': '机械电气工程学院', 'major_id': '460110', 'major_name': '智能焊接技术', 'major_direction': nan, 'campus': '铁门关校区', 'fixed_classroom_number': nan, 'is_fixed_classroom': 1, 'remarks': nan, 'head_teacher_phone': nan, 'head_teacher_id': nan, 'graduation_year_semester': nan, 'is_expanded': None, 'academic_advisor': nan}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-25 11:37:29,021 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:37:32,855 - melody_haven - ERROR - Exception on /api/auth/upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in _escape_args
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in <dictcomp>
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 530, in literal
+    return self.escape(obj, self.encoders)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 523, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 25, in escape_item
+    val = encoder(val, mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 56, in escape_float
+    raise ProgrammingError("%s can not be used with MySQL" % s)
+pymysql.err.ProgrammingError: nan can not be used with MySQL
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\auth\routes.py", line 89, in upload_excel
+    db.session.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4352, in flush
+    self._flush(objects)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    flush_context.execute()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in _escape_args
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\cursors.py", line 104, in <dictcomp>
+    return {key: conn.literal(val) for (key, val) in args.items()}
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 530, in literal
+    return self.escape(obj, self.encoders)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\connections.py", line 523, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 25, in escape_item
+    val = encoder(val, mapping)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pymysql\converters.py", line 56, in escape_float
+    raise ProgrammingError("%s can not be used with MySQL" % s)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) nan can not be used with MySQL
+[SQL: INSERT INTO class (class_number, class_name, class_short_name, duration, education_level, class_type, counselor, head_teacher, monitor, class_assistant, expected_graduation_year, is_graduated, class_size, gender_distribution, max_class_size, enrollment_year, department, major_id, major_name, major_direction, campus, fixed_classroom_number, is_fixed_classroom, remarks, head_teacher_phone, head_teacher_id, graduation_year_semester, is_expanded, academic_advisor) VALUES (%(class_number)s, %(class_name)s, %(class_short_name)s, %(duration)s, %(education_level)s, %(class_type)s, %(counselor)s, %(head_teacher)s, %(monitor)s, %(class_assistant)s, %(expected_graduation_year)s, %(is_graduated)s, %(class_size)s, %(gender_distribution)s, %(max_class_size)s, %(enrollment_year)s, %(department)s, %(major_id)s, %(major_name)s, %(major_direction)s, %(campus)s, %(fixed_classroom_number)s, %(is_fixed_classroom)s, %(remarks)s, %(head_teacher_phone)s, %(head_teacher_id)s, %(graduation_year_semester)s, %(is_expanded)s, %(academic_advisor)s)]
+[parameters: {'class_number': '24znhjjs2', 'class_name': '24智能焊接技术2班', 'class_short_name': None, 'duration': '3年', 'education_level': '专科', 'class_type': '普通班级', 'counselor': None, 'head_teacher': None, 'monitor': None, 'class_assistant': None, 'expected_graduation_year': None, 'is_graduated': 0, 'class_size': 36, 'gender_distribution': None, 'max_class_size': 60, 'enrollment_year': 2024, 'department': '机械电气工程学院', 'major_id': '460110', 'major_name': '智能焊接技术', 'major_direction': None, 'campus': '铁门关校区', 'fixed_classroom_number': nan, 'is_fixed_classroom': 1, 'remarks': None, 'head_teacher_phone': None, 'head_teacher_id': None, 'graduation_year_semester': None, 'is_expanded': None, 'academic_advisor': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-25 11:39:27,697 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:54:51,667 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:56:54,061 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:57:26,970 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:58:11,109 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 11:59:42,559 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:04:15,122 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:08:29,416 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:13:10,208 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:16:28,320 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:16:35,691 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:17:43,800 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:17:57,101 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:18:03,072 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:18:30,539 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:20:14,517 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:21:00,121 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:21:17,977 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:24:47,810 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_library_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:26:53,685 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:27:08,854 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 348, in load_workbook
+    reader.read()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 293, in read
+    self.read_workbook()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 151, in read_workbook
+    wb_part = _find_workbook_part(self.package)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 112, in _find_workbook_part
+    raise IOError("File contains no valid workbook part")
+OSError: File contains no valid workbook part
+2025-01-25 12:28:59,905 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 348, in load_workbook
+    reader.read()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 293, in read
+    self.read_workbook()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 151, in read_workbook
+    wb_part = _find_workbook_part(self.package)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 112, in _find_workbook_part
+    raise IOError("File contains no valid workbook part")
+OSError: File contains no valid workbook part
+2025-01-25 12:37:25,928 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:37:38,141 - melody_haven - ERROR - Exception on /api/upload/upload-course [POST]
+Traceback (most recent call last):
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\30266\Desktop\服务外包\Code\backend\SmartScheduler\app\blueprints\upload\routes.py", line 318, in upload_course_excel
+    df = pd.read_excel(file, engine='openpyxl', header=0)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1268, in __init__
+    self._RealGetContents()
+  File "C:\Users\30266\anaconda3\envs\myenv\lib\zipfile.py", line 1335, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2025-01-25 12:53:29,029 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:55:20,695 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 12:57:03,216 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:01:40,016 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:02:48,908 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:05:47,281 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:09:19,666 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:10:41,913 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:15:23,323 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:18:06,360 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:31:56,680 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:35:53,237 - melody_haven - INFO - Logging is successfully configured!
+2025-01-25 13:42:39,165 - melody_haven - INFO - Logging is successfully configured!
